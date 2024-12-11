@@ -49,5 +49,63 @@ if('N'){
     console.log('i am not there')
 }// iam there
 
+console.log(5>'15'<5)
+//false<5 0<5//true
+console.log(7>'15'<7)
+//false<7//true
+console.log(7<'85'>5)
+//true>5 //false
 
+
+
+console.log(1)
+
+setTimeout(()=>{
+    console.log(2)
+},1000)
+
+setTimeout(()=>{
+    console.log(3)
+},0)
+
+console.log(4) //out put is 1432
+
+for(var i=0; i<4;i++){
+    console.log(i)
+}
+//out put is 0123
+for(let i=0; i<4;i++){
+    console.log(i)
+}
+//output is 0123
+
+
+for(var i=0; i<4;i++){
+    setTimeout(()=>{
+        console.log(i)
+    },200)
+}
+
+for(let i=0; i<4;i++){
+    setTimeout(()=>{
+    console.log(i)     
+    },700)
+   
+}
+
+ 
+for (var i = 0; i < 4; i++) {
+    (function(i) {
+        setTimeout(() => {
+            console.log(i);
+        }, 800);
+    })(i);
+}
+//out put 444401230123
+
+
+console.log(['a']+['b'])// ab
+console.log([]+[])//""
+console.log(![])//false
+console.log(![] + [])//false
 
