@@ -1,0 +1,53 @@
+var a=10
+console.log(a)
+function a(){
+    console.log(20)
+}
+
+console.log(a);  // out put 10 10
+
+
+var a=10
+console.log(a)
+function a(){
+    console.log(20)
+}
+
+console.log(a());  // out put is 10 typeerrror not function
+
+console.log(Array(1,2))
+console.log(Array(2))   //out put [1,2] (2,<emty>)
+
+console.log(undefined === undefined); //out put true
+console.log(undefined == undefined); //out put is true
+console.log(null== undefined);// true
+console.log(null === undefined);// false
+
+console.log(JSON.stringify(NaN) === JSON.stringify(NaN));
+console.log(NaN==true);//false
+console.log(NaN===false);//false
+
+
+if(NaN){
+    console.log('i am there')
+} else{
+    console.log('i am not there')
+}  // ia am not there
+
+
+if(100){
+    console.log('i am there')
+} else{
+    console.log('i am not there')
+}
+//out ia m there
+
+
+if('N'){
+    console.log('i am there')
+} else{
+    console.log('i am not there')
+}// iam there
+
+
+
